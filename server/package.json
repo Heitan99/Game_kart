@@ -1,0 +1,21 @@
+{
+  "name": "kart-campus-server",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Servidor autoritativo de KART CAMPUS (Express + Socket.IO).",
+  "license": "MIT",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "16.6.1",
+    "express": "4.22.3",
+    "socket.io": "4.8.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

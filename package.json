@@ -1,0 +1,35 @@
+{
+  "name": "kart-campus",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "KART CAMPUS — carreras arcade 3D multijugador online. Cliente Three.js + servidor autoritativo Socket.IO.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Heitan99/Game_Kart.git"
+  },
+  "main": "server/src/server.js",
+  "workspaces": [
+    "server"
+  ],
+  "scripts": {
+    "start": "node server/src/server.js",
+    "dev": "node --watch server/src/server.js",
+    "test": "node --test --test-force-exit \"tests/unit/**/*.test.js\" \"tests/integration/**/*.test.js\"",
+    "test:unit": "node --test --test-force-exit \"tests/unit/**/*.test.js\"",
+    "test:integration": "node --test --test-force-exit \"tests/integration/**/*.test.js\"",
+    "check": "node scripts/check-syntax.js",
+    "smoke": "node scripts/smoke.js",
+    "smoke:solo": "node scripts/smoke-solo.js",
+    "smoke:online": "node scripts/smoke-online.js",
+    "smoke:race": "node scripts/smoke-race.js"
+  },
+  "devDependencies": {
+    "socket.io-client": "4.8.4",
+    "ws": "8.23.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
