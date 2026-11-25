@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Heitan99/Game_Kart.git"
+    "url": "https://github.com/Heitan99/Game_kart.git"
   },
   "main": "server/src/server.js",
   "workspaces": [
